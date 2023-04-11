@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    color: rgb(245, 240, 240);
+    font-size: 5rem;
+    padding: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.grid{
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+}
+.headerpart{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    font-size: 1rem;
+    border-color: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 90px;
+    height: 40px;
+}
+button:hover{
+    transform: scaleX(1.2);
+    transition: ease-out;
+}
+.grid div{
+    background-color: rgb(6, 6, 6);
+    margin: auto;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid div:nth-child(1){
+    border-right: 5px dashed white;
+    border-bottom: 5px dashed white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid div:nth-child(2){
+    border-right: 5px dashed white;
+    border-bottom: 5px dashed white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid div:nth-child(3){    
+    border-bottom: 5px dashed white;
 }
-
-.App-link {
-  color: #61dafb;
+.grid div:nth-child(4){
+    border-right: 5px dashed white;
+    border-bottom: 5px dashed white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid div:nth-child(5){
+    border-right: 5px dashed white;
+    border-bottom: 5px dashed white;
+}
+.grid div:nth-child(6){
+    border-bottom: 5px dashed white;
+}
+.grid div:nth-child(7){
+    border-right: 5px dashed white;
+}
+.grid div:nth-child(8){
+    border-right: 5px dashed white;
 }
